@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Answers" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Answers" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01009f12f5710f094cfe895a7e90b79ee508" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{dad256b1-db0e-44ed-8a41-353d3da27508}" Name="WGLLNonNegotiable" /><FieldRef ID="{e12f27b9-50a8-4615-a6be-b1ea15ccb170}" Name="WGLLResult" /><FieldRef ID="{10ef2388-c2ae-4096-b6d6-448587081738}" Name="WGLLCriteriaDetail" /><FieldRef ID="{15e55445-f15f-4a80-bf4c-95f18c8f5efa}" Name="WGLLReviewID" /><FieldRef ID="{6cb1bf4a-3237-4e10-9ebd-2c2b8648a068}" Name="WGLLSubset" /><FieldRef ID="{11777f95-5429-463d-b120-01f307f09894}" Name="WGLLReasonForFailure" /><FieldRef ID="{c679b838-1f82-441b-9a91-010a433bed00}" Name="WGLLCriteriaOrder" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Criteria" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="WGLLNonNegotiable" ID="{dad256b1-db0e-44ed-8a41-353d3da27508}" DisplayName="Non-Negotiable" Type="Text" /><Field Name="WGLLResult" ID="{e12f27b9-50a8-4615-a6be-b1ea15ccb170}" DisplayName="Result" Type="Text" /><Field Name="WGLLCriteriaDetail" ID="{10ef2388-c2ae-4096-b6d6-448587081738}" DisplayName="Criteria Detail" Type="Note" /><Field Name="WGLLReviewID" ID="{15e55445-f15f-4a80-bf4c-95f18c8f5efa}" DisplayName="ReviewID" Type="Text" /><Field Name="WGLLSubset" ID="{6cb1bf4a-3237-4e10-9ebd-2c2b8648a068}" DisplayName="Subset" Type="Text" /><Field Name="WGLLReasonForFailure" ID="{11777f95-5429-463d-b120-01f307f09894}" DisplayName="Reason for failure" Type="Note" /><Field Name="WGLLCriteriaOrder" ID="{c679b838-1f82-441b-9a91-010a433bed00}" DisplayName="Criteria Order" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="WGLLNonNegotiable" /><FieldRef Name="WGLLResult" /><FieldRef Name="WGLLCriteriaDetail" /><FieldRef Name="WGLLReviewID" /><FieldRef Name="WGLLSubset" /><FieldRef Name="WGLLReasonForFailure" /><FieldRef Name="WGLLCriteriaOrder" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

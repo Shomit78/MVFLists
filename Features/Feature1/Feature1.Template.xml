@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/"
+         Description="Creates the lists required for the Mole Valley Farmers What Good Looks Like app."
+         Hidden="FALSE"
+         Id="f6c6ba51-93ab-437d-a6e6-3ff2786a85ec"
+         Scope="Web"
+         SolutionId="70c42591-fda9-4112-acd2-4973edde8262"
+         Title="Mole Valley Farmers - What Good Looks Like Lists"
+         Version="1.0.0.0">
+</Feature>

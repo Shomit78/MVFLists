@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Criteria" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Criteria" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010029c22ae221a94c699e7efceb35edad3b" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{994fc7fd-8c9f-4060-a01d-45e1a65874c6}" Name="CriteriaDetail" /><FieldRef ID="{fd3da23a-02b9-4b12-9df7-54efca5a5419}" Name="NonNegotiable" /><FieldRef ID="{8a38aa59-be1b-436a-b5f4-2d6bcf17b9fe}" Name="Subset" /><FieldRef ID="{70ef5b01-0ea3-4bdb-bbb3-8a49b5090bc9}" Name="Stores" /><FieldRef ID="{9a4aad5a-d99d-4668-870a-472d4131bc1c}" Name="CriteriaOrder" /><FieldRef ID="{ea90459b-9cbd-4288-b5de-9589aece0d7f}" Name="VisitType" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Criteria" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="CriteriaDetail" ID="{994fc7fd-8c9f-4060-a01d-45e1a65874c6}" DisplayName="Criteria Detail" Type="Note" />
+      <Field Name="NonNegotiable" ID="{fd3da23a-02b9-4b12-9df7-54efca5a5419}" DisplayName="Non-Negotiable" Type="Boolean" />
+      <Field Name="Subset" ID="{8a38aa59-be1b-436a-b5f4-2d6bcf17b9fe}" DisplayName="Subset" Type="Lookup" List="Lists/Subsets" ShowField="Title" />
+      <Field Name="Stores" ID="{70ef5b01-0ea3-4bdb-bbb3-8a49b5090bc9}" DisplayName="Stores" Type="LookupMulti" List="Lists/Stores" ShowField="Title" Mult="TRUE" />
+      <Field Name="CriteriaOrder" ID="{9a4aad5a-d99d-4668-870a-472d4131bc1c}" DisplayName="Criteria Order" Type="Number" Decimals="0" />
+      <Field Name="VisitType" ID="{ea90459b-9cbd-4288-b5de-9589aece0d7f}" DisplayName="VisitType" Type="LookupMulti" List="Lists/VisitTypes" ShowField="Title" Mult="TRUE" />
+    </Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="CriteriaDetail" /><FieldRef Name="NonNegotiable" /><FieldRef Name="Subset" /><FieldRef Name="Stores" /><FieldRef Name="CriteriaOrder" /><FieldRef Name="VisitType" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

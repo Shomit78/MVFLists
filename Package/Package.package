@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="70c42591-fda9-4112-acd2-4973edde8262" solutionId="70c42591-fda9-4112-acd2-4973edde8262" resetWebServer="false" sharePointProductVersion="15.0" name="MVFLists" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a9654cb0-723f-4092-a7e9-afcd85d765e3" />
+  </features>
+</package>

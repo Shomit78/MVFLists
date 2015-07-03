@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Stores" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/Stores" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Bridgwater</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cullompton</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Frome</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Holsworthy</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Liskeard</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Newton Abbot</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">South Molton</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">St Columb</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Yeovil</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Redruth</Field>
+          <Field Name="WGLLRegion">1;#Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bridgend</Field>
+          <Field Name="WGLLRegion">3;#Region 3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bury St Edmunds</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Colchester</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Darley Dale</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Dereham</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Fauld</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Market Rasen</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Melton Mowbray</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Newark</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Stamford</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Worksop</Field>
+          <Field Name="WGLLRegion">4;#Region 4</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

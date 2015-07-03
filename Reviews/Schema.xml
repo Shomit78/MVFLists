@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Reviews" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Reviews" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010018ce888f07bc49979776187b4f3edad7" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{da0cb096-e129-4f1d-a1e2-a8b7502354ab}" Name="WGLLStore" /><FieldRef ID="{8ffec97b-b6ac-47d9-aa2b-dd754bbb04ee}" Name="WGLLVisitType" /><FieldRef ID="{d5a0bc63-ae25-4859-99d2-277d73847e34}" Name="WGLLStatus" /><FieldRef ID="{96b277b4-139d-47fb-854a-70f7a4d0ba80}" Name="WGLLNotes" /><FieldRef ID="{e920dd1d-0f86-4e4a-a84a-c1d73921151a}" Name="WGLLVisitSummary" /><FieldRef ID="{f217625f-998a-43a3-96ff-3fa0f55cb1e2}" Name="WGLLRegion" /><FieldRef ID="{9e552c0b-ff3d-4678-a939-620d5ca6aa75}" Name="WGLLSubmittedDate" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="ReviewID" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="WGLLStore" ID="{da0cb096-e129-4f1d-a1e2-a8b7502354ab}" DisplayName="Store" Type="Text" /><Field Name="WGLLVisitType" ID="{8ffec97b-b6ac-47d9-aa2b-dd754bbb04ee}" DisplayName="Visit Type" Type="Text" /><Field Name="WGLLStatus" ID="{d5a0bc63-ae25-4859-99d2-277d73847e34}" DisplayName="Status" Type="Text" /><Field Name="WGLLNotes" ID="{96b277b4-139d-47fb-854a-70f7a4d0ba80}" DisplayName="Notes" Type="Note" /><Field Name="WGLLVisitSummary" ID="{e920dd1d-0f86-4e4a-a84a-c1d73921151a}" DisplayName="Visit Summary" Type="Note" /><Field Name="WGLLRegion" ID="{f217625f-998a-43a3-96ff-3fa0f55cb1e2}" DisplayName="Region" Type="Text" /><Field Name="WGLLSubmittedDate" ID="{9e552c0b-ff3d-4678-a939-620d5ca6aa75}" DisplayName="Submitted Date" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="WGLLStore" /><FieldRef Name="WGLLVisitType" /><FieldRef Name="WGLLStatus" /><FieldRef Name="WGLLNotes" /><FieldRef Name="WGLLVisitSummary" /><FieldRef Name="WGLLRegion" /><FieldRef Name="WGLLSubmittedDate" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

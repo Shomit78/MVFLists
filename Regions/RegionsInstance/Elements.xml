@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Regions"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/Regions"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Region 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Region 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Region 3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Region 4</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

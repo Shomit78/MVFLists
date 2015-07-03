@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Guidance Notes" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Guidance Notes" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100d8ccb31036e84758aae941eb9f91b087" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{13116e61-2d71-4e1c-a7af-fb200406b3fc}" Name="WGLLGuidanceNotes" /><FieldRef ID="{f8b52459-e926-44ae-886d-25c993cd8e0e}" Name="WGLLStore" /><FieldRef ID="{f83bb988-2cab-4ca3-af83-3f9e245828c7}" Name="WGLLSubset" /><FieldRef ID="{10dd56ed-2a22-4e42-b04b-648584f85db6}" Name="WGLLCriteria" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="WGLLGuidanceNotes" ID="{13116e61-2d71-4e1c-a7af-fb200406b3fc}" DisplayName="Guidance Notes" Type="Note" Required="TRUE" NumLines="10" RichText="TRUE" RichTextMode="FullHtml" /><Field Name="WGLLStore" ID="{f8b52459-e926-44ae-886d-25c993cd8e0e}" DisplayName="Store" Type="Lookup" Required="TRUE" List="Lists\Stores" ShowField="Title" /><Field Name="WGLLSubset" ID="{f83bb988-2cab-4ca3-af83-3f9e245828c7}" DisplayName="Subset" Type="Lookup" Required="TRUE" List="Lists\Subsets" ShowField="Title" /><Field Name="WGLLCriteria" ID="{10dd56ed-2a22-4e42-b04b-648584f85db6}" DisplayName="Criteria" Type="Lookup" Required="TRUE" List="Lists\Criteria" ShowField="Title" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="WGLLGuidanceNotes" /><FieldRef Name="WGLLStore" /><FieldRef Name="WGLLSubset" /><FieldRef Name="WGLLCriteria" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

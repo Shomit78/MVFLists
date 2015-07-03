@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="VisitTypes" OnQuickLaunch="TRUE" TemplateType="10002" Url="Lists/VisitTypes" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Daily</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Monthly</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Weekly</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

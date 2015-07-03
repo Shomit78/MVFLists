@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Subsets" OnQuickLaunch="TRUE" TemplateType="10003" Url="Lists/Subsets" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Sub 1</Field>
+          <Field Name="SubsetDetail">sub 1 details</Field>
+          <Field Name="SubsetOrder">1</Field>
+          <Field Name="SubsetActive">True</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sub 2</Field>
+          <Field Name="SubsetDetail">sub 2 details</Field>
+          <Field Name="SubsetOrder">2</Field>
+          <Field Name="SubsetActive">True</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sub 3</Field>
+          <Field Name="SubsetDetail">sub 3 details</Field>
+          <Field Name="SubsetOrder">3</Field>
+          <Field Name="SubsetActive">True</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
