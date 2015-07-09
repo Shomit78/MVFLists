@@ -4,7 +4,7 @@
                 OnQuickLaunch="TRUE"
                 TemplateType="10000"
                 Url="Lists/Regions"
-                Description="My List Instance">
+                Description="Regions list for What Good Looks Like application">
     <Data>
       <Rows>
         <Row>

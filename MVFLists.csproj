@@ -74,6 +74,12 @@
     <None Include="GuidanceNotes\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ed85d48c-a763-411d-b8de-d229d1aab534}</SharePointProjectItemId>
     </None>
+    <None Include="Images\ImagesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b9c3d2cb-3deb-49dc-9043-b4a97f1698f2}</SharePointProjectItemId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a3e16514-d95a-4a6d-af5a-4fc9d220c9af}</SharePointProjectItemId>
+    </None>
     <None Include="key.snk" />
     <None Include="NPS\NPSInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{126e17d7-6981-45de-b82b-4a8563a8ae8e}</SharePointProjectItemId>
@@ -131,6 +137,13 @@
     <Content Include="GuidanceNotes\Elements.xml" />
     <Content Include="GuidanceNotes\GuidanceNotesInstance\Elements.xml" />
     <Content Include="GuidanceNotes\Schema.xml" />
+    <Content Include="Images\EditDlg.htm" />
+    <Content Include="Images\Elements.xml" />
+    <Content Include="Images\FileDlg.htm" />
+    <Content Include="Images\ImagesInstance\Elements.xml" />
+    <Content Include="Images\Repair.aspx" />
+    <Content Include="Images\Schema.xml" />
+    <Content Include="Images\Upload.aspx" />
     <Content Include="NPS\Elements.xml" />
     <Content Include="NPS\NPSInstance\Elements.xml" />
     <Content Include="NPS\Schema.xml" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="VisitTypes" OnQuickLaunch="TRUE" TemplateType="10002" Url="Lists/VisitTypes" Description="My List Instance">
+  <ListInstance Title="VisitTypes" OnQuickLaunch="TRUE" TemplateType="10002" Url="Lists/VisitTypes" Description="Visit Types list for What Good Looks Like application">
     <Data>
       <Rows>
         <Row>

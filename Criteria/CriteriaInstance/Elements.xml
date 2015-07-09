@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Criteria" OnQuickLaunch="TRUE" TemplateType="10004" Url="Lists/Criteria" Description="My List Instance"></ListInstance>
+  <ListInstance Title="Criteria" OnQuickLaunch="TRUE" TemplateType="10004" Url="Lists/Criteria" Description="Criteria list for What Good Looks Like application"></ListInstance>
 </Elements>

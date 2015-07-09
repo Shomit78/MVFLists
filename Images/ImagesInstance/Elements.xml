@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="WGLLImages" OnQuickLaunch="TRUE" TemplateType="10009" Url="Lists/WGLLImages" Description="Images library for What Good Looks Like application"></ListInstance>
+</Elements>

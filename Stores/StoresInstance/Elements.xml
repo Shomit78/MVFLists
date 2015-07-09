@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Stores" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/Stores" Description="My List Instance">
+  <ListInstance Title="Stores" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/Stores" Description="Stores list for What Good Looks Like application">
     <Data>
       <Rows>
         <Row>
